@@ -7,7 +7,7 @@
           <div class="flex w-full items-center justify-between space-x-6 p-6">
             <div class="flex-1 truncate">
               <div class="flex items-center space-x-3">
-                <h3 class="text-sm font-medium text-gray-900 truncate"><%= board.name %></h3>
+                <h3 class="text-sm font-medium text-gray-900 truncate hover:text-blue-500"><%= link_to board.name, board_path(board) %></h3>
               </div>
               <p class="mt-1 text-sm text-gray-500 truncate">Created <%= time_ago_in_words(board.created_at) %> ago</p>
             </div>
