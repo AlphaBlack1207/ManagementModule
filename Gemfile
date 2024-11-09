@@ -14,6 +14,7 @@ gem "tailwindcss-rails"
 gem "sidekiq"
 gem "sass-rails"
 gem "foreman"
+gem "jsonapi-serializer"
 # gem "redis", ">= 4.0.1"
 
 # gem "kredis"
