@@ -13,3 +13,7 @@ pin "custom-event", to: "https://ga.jspm.io/npm:custom-event@1.0.1/index.js" # @
 pin "dragula", to: "https://ga.jspm.io/npm:dragula@3.7.3/dragula.js" # @3.7.3
 pin "process", to: "https://ga.jspm.io/npm:@jspm/core@2.1.0/nodelibs/browser/process-production.js" # @2.1.0
 pin "ticky", to: "https://ga.jspm.io/npm:ticky@1.0.1/ticky-browser.js" # @1.0.1
+pin "axios", to: "https://ga.jspm.io/npm:axios@1.7.7/index.js" # @1.7.7
+pin "#lib/adapters/http.js", to: "https://ga.jspm.io/npm:axios@1.7.7/lib/helpers/null.js" # @1.7.7
+pin "#lib/platform/node/classes/FormData.js", to: "https://ga.jspm.io/npm:axios@1.7.7/lib/helpers/null.js" # @1.7.7
+pin "#lib/platform/node/index.js", to: "https://ga.jspm.io/npm:axios@1.7.7/lib/platform/browser/index.js" # @1.7.7
