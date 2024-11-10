@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Management Module Information
 
-Things you may want to cover:
+This project contains the management module, responsible for handling administrative tasks and configurations.
 
-* Ruby version
+### Prerequisites
+- Node.js (v14 or higher)
+- PostgreSQL
+- Redis
 
-* System dependencies
+### Configuration
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Set up environment variables:
+    - Copy `.env.example` to `.env`
+    - Update database credentials
+    - Configure Redis connection
 
-* Configuration
+### Running the Project
+```bash
+npm run dev     # Development mode
+npm run build   # Build project
+npm start       # Production mode
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Main Features
+- User management
+- Role-based access control
+- System configuration
+- Monitoring and logging
