@@ -17,3 +17,7 @@ pin "axios", to: "https://ga.jspm.io/npm:axios@1.7.7/index.js" # @1.7.7
 pin "#lib/adapters/http.js", to: "https://ga.jspm.io/npm:axios@1.7.7/lib/helpers/null.js" # @1.7.7
 pin "#lib/platform/node/classes/FormData.js", to: "https://ga.jspm.io/npm:axios@1.7.7/lib/helpers/null.js" # @1.7.7
 pin "#lib/platform/node/index.js", to: "https://ga.jspm.io/npm:axios@1.7.7/lib/platform/browser/index.js" # @1.7.7
+pin "lodash-es", to: "https://ga.jspm.io/npm:lodash-es@4.17.21/lodash.js" # @4.17.21
+pin "flowbite", to: "https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.turbo.min.js" # @2.5.2
+pin "@popperjs/core", to: "https://ga.jspm.io/npm:@popperjs/core@2.11.8/lib/index.js" # @2.11.8
+pin "flowbite-datepicker", to: "https://ga.jspm.io/npm:flowbite-datepicker@1.3.0/dist/main.esm.js" # @1.3.0
