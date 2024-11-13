@@ -48,7 +48,31 @@ export default class extends Controller {
       boards: boards,
       itemAddOptions: {
         enabled: true,
+        class: "kanban-title-button btn btn-default btn-xs",
       },
+      click: () => {
+        console.log("Click");
+      },
+    });
+  }
+
+  getHeaderTitles() {
+    return Array.from(document.getElementsByClassName("kanban-title-board"));
+  }
+
+  cursorifyHeaderTitles() {
+    this.getHeaderTitles().forEach((headerTitle) => {
+      headerTitle.classList.add("cursor-pointer");
+    });
+  }
+
+  addLinkToHeaderTitles(boards) {
+    this.getHeaderTitles().forEach((headerTitle, index) => {
+      headerTitle.addEventListener("click", () => {
+        Turbo.visit(
+          `${this.element.dataset.boardListsUrl}/${boards[index].id}/edit`
+        );
+      });
     });
   }
 
@@ -57,6 +81,8 @@ export default class extends Controller {
       .get(this.element.dataset.apiUrl, { headers: this.HEADERS })
       .then((response) => {
         this.buildkanban(this.builBoards(response["data"]));
+        this.cursorifyHeaderTitles();
+        this.addLinkToHeaderTitles(this.builBoards(response["data"]));
       });
   }
 }

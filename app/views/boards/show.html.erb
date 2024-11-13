@@ -4,7 +4,8 @@
     <div 
       id="board" 
       data-controller="board" 
-      data-api-url= "<%= api_board_lists_path(@board) %>" 
+      data-api-url= "<%= api_board_lists_path(@board) %>"
+      data-board-lists-url= "<%= board_lists_path(@board) %>"
       class="overflow-x-scroll"
     >
   </div>
