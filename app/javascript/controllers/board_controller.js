@@ -48,7 +48,9 @@ export default class extends Controller {
       boards: boards,
       itemAddOptions: {
         enabled: true,
+        content: "+ Add Item",
         class: "kanban-title-button btn btn-default btn-xs",
+        footer: true,
       },
       click: () => {
         console.log("Click");
